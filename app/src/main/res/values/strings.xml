@@ -1,0 +1,174 @@
+<resources>
+    <string name="app_name">نیرا</string>
+
+    <!-- Drawer -->
+    <string name="navigation_subtitle">نیازمندی‌های رامسر و تنکابن</string>
+    <string name="navigation_menu_create_item">ایجاد آگهی</string>
+    <string name="navigation_menu_your_items">آگهی‌های شما</string>
+    <string name="navigation_menu_bookmarks">نشان‌های شما</string>
+    <string name="navigation_menu_user_account">حساب کاربری</string>
+    <string name="navigation_menu_create_story">درج تبلیغ</string>
+    <string name="navigation_menu_contact_us">تماس با ما</string>
+
+    <!-- Top Menu Item Caption -->
+    <string name="top_menu_filter_caption">فیلتر</string>
+    <string name="top_menu_search_caption">جستجو</string>
+    <string name="top_menu_drawer_toggle_show">نمایش</string>
+    <string name="top_menu_drawer_toggle_hide">پنهان</string>
+    <string name="top_menu_button_back_caption">برگشت</string>
+
+    <!-- Create Item Page -->
+    <string name="toolbar_title_create_item">ایجاد آگهی</string>
+    <string name="textview_title_hint">عنوان آگهی</string>
+    <string name="textview_description_hint">توضیحات آگهی</string>
+    <string name="textview_price_hint">قیمت</string>
+    <string name="note_select_place">شهرتان را انتخاب کنید</string>
+    <string name="ramsar_city">رامسر</string>
+    <string name="tonkabon_city">تنکابن</string>
+    <string name="note_select_category">برای آگهی، دسته‌ی مناسب انتخاب کنید</string>
+    <string name="note_first_image_is_main_image">می‌توانید ۱۰ تصویر اضافه کنید. تصویر اول به عنوان تصویر اصلی انتخاب می‌شود.</string>
+    <string name="button_add_image">اضافه کردن تصویر</string>
+    <string name="button_send_item">ارسال آگهی</string>
+    <string name="required_permission_denied">اجازه دسترسی به این بخش داده نشده است!</string>
+    <string name="cannot_add_more_image">نمی‌توانید بیشتر از ۱۰ تصویر درج کنید!</string>
+    <string name="telegram_edittext_hint">شناسه تلگرام</string>
+
+    <!-- Login Page -->
+    <string name="toolbar_title_login">ورود</string>
+    <string name="note_enter_phone_number">شماره تلفن همراه خود را در قسمت زیر وارد نموده و سپس دکمه «ارسال رمز» را لمس کنید.</string>
+    <string name="note_this_phone_number_would_be_used">این شماره در آگهی‌های شما درج خواهد شد و سایر کاربران قادر به مشاهده آن خواهند بود.</string>
+    <string name="button_send_code">ارسال رمز</string>
+
+    <!-- Verification Page -->
+    <string name="toolbar_title_verify">تایید شماره همراه</string>
+    <string name="button_check_code">بررسی رمز</string>
+    <string name="button_send_again">ارسال دوباره</string>
+    <string name="button_change_phone_number">تغییر شماره</string>
+    <string name="enter_verification_code">لطفاً رمز پیامک شده را وارد نمایید!</string>
+
+    <!-- User Account Page -->
+    <string name="toolbar_title_user_account">حساب کاربری</string>
+    <string name="user_name_hint">نام و نام خانوادگی</string>
+    <string name="button_logout">خروج از حساب</string>
+    <string name="problem_with_user_name_saving">متأسفانه مشکلی در ذخیره نام به وجود آمد!</string>
+    <string name="change_user_image">تغییر تصویر</string>
+    <string name="remove_user_image">حذف تصویر</string>
+    <string name="sending_user_image">در حال ارسال تصویر...</string>
+    <string name="do_you_want_remove_user_image">آیا از حذف تصویر کاربری‌تان مطمئن هستید؟</string>
+    <string name="do_you_want_to_logout">آیا قصد خروج از حساب کاربری‌تان را دارید؟</string>
+
+    <!-- Suggest Page -->
+    <string name="edittext_suggest_hint">در مورد مشکلی که در برنامه مشاهده کردید و یا پیشنهادتان توضیح دهید.</string>
+    <string name="button_send">ارسال (شماره تلفن شما ثبت می‌شود)</string>
+
+    <!-- Filter Page -->
+    <string name="toolbar_title_filter">فیلتر</string>
+    <string name="toolbar_title_search">جستجو</string>
+    <string name="button_show_items">نمایش آگهی‌ها</string>
+    <string name="button_change_filter">تغییر فیلتر</string>
+    <string name="supercategory">دسته کلی</string>
+    <string name="subcategory">دسته جزئی</string>
+    <string name="no_filtered_items">موردی با این ویژگی‌ها پیدا نشد!</string>
+    <string name="filter_only_items_with_image">فقط آگهی‌های عکس‌دار</string>
+
+    <!-- User Items Page -->
+    <string name="toolbar_title_user_items">آگهی‌های شما</string>
+    <string name="waiting_item_message">این آگهی در انتظار تأیید است!</string>
+    <string name="verified_item_message">این آگهی تأیید شده است</string>
+
+    <!-- Item Page -->
+    <string name="item_title">-</string>
+    <string name="user_name_placeholder">آگهی‌دهنده</string>
+
+    <!-- About us With Developer Page -->
+    <string name="textview_developer_name">سجاد جنت بوداغی</string>
+    <string name="textview_developer_phone_number">09117450633</string>
+    <string name="textview_developer_email">sajjad.boodaghi@gmail.com</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_logged_in">ورود با موفقیت انجام شد</string>
+    <string name="toast_logged_out">خروج از حساب انجام شد</string>
+    <string name="toast_first_login">ابتدا وارد حساب کاربری خود شوید</string>
+    <string name="toast_no_more_items">انتهای فهرست</string>
+    <string name="toast_problem_with_creating_photo_file">متأسفانه مشکلی به وجود آمده است!</string>
+    <string name="toast_story_no_large_image_yet">هنوز تصویر بزرگ را انتخاب نکردید!</string>
+    <string name="toast_story_large_image_selected">تصویر بزرگ انتخاب شد؛ برای مشاهده‌ی آن، می‌توانید تصویر بالا را لمس کنید</string>
+    <string name="toast_story_not_selected_image">انتخاب هر دو تصویر کوچک و بزرگ برای درج تبلیغ الزامی است!</string>
+
+    <!-- Progress Dialog Messages -->
+    <string name="connecting_to_server">در حال ارتباط با سرور...</string>
+    <string name="sending_new_item">در حال ارسال آگهی...</string>
+    <string name="receiving_categories">در حال دریافت دسته‌ها...</string>
+    <string name="preparing_content">در حال آماده‌سازی محتوا...</string>
+    <string name="sending_story_images">در حال ارسال تصاویر...</string>
+
+    <!-- Alert Dialog Messages -->
+    <string name="problem_parse_response">متأسفانه مشکلی در دریافت پاسخ از سرور به وجود آمده است!</string>
+    <string name="problem_request">متأسفانه مشکلی در برقراری ارتباط با سرور به وجود آمده است!</string>
+    <string name="problem_getting_categories">متأسفانه مشکلی در دریافت دسته‌ها به وجود آمده است!</string>
+    <string name="problem_getting_subcategories">متأسفانه مشکلی در دریافت زیردسته‌ها به وجود آمده است!</string>
+    <string name="select_or_capture_image">می‌توانید از گالری عکس انتخاب کنید و یا با استفاده از دوربین، عکس جدید بگیرید.</string>
+    <string name="no_internet_access">دسترسی به اینترنت وجود ندارد!</string>
+    <string name="want_leave_create_item">آیا می‌خواهید از صفحه ایجاد آگهی خارج شوید؟</string>
+    <string name="title_field_is_empty">بخش عنوان را تکمیل نمایید!</string>
+    <string name="title_is_too_short">عنوان طولانی‌تری انتخاب کنید!</string>
+    <string name="description_field_is_empty">بخش توضیحات را تکمیل نمایید!</string>
+    <string name="description_is_too_short">توضیحات بیشتری بنویسید!</string>
+    <string name="telegram_id_is_invalid">طول شناسه تلگرام باید بین 5 تا 32 کاراکتر باشد!</string>
+
+    <!-- Alert Dialog Titles -->
+    <string name="alert_dialog_title_message">پیغام</string>
+    <string name="alert_dialog_title_add_image">انتخاب تصویر</string>
+    <string name="alert_dialog_title_error">خطا</string>
+    <string name="alert_dialog_title_notice">توجه</string>
+    <string name="alert_dialog_title_danger">هشدار</string>
+
+    <!-- Alert Dialog Buttons Caption -->
+    <string name="alert_dialog_button_understand">متوجه شدم</string>
+    <string name="alert_dialog_button_try_again">تلاش دوباره</string>
+    <string name="alert_dialog_button_cancel">انصراف</string>
+    <string name="alert_dialog_button_yes">بله</string>
+    <string name="alert_dialog_button_no">خیر</string>
+    <string name="alert_dialog_button_report">پیگیری</string>
+
+    <!-- Create Story Page -->
+    <string name="toolbar_title_create_story">درج تبلیغ</string>
+    <string name="button_create_story">پذیرش شرایط و قوانین + ارسال تصاویر</string>
+    <string name="button_story_small_image">تصویر کوچک</string>
+    <string name="button_story_large_image">تصویر بزرگ</string>
+    <string name="consider_margin_for_large_image">برای اطراف تصویر بزرگ، فضای خالی در نظر بگیرید!</string>
+    <string name="getting_user_stories">در حال دریافت اطلاعات...</string>
+    <string name="story_draft_saved">پیش‌نویس تبلیغ ذخیره شد</string>
+
+    <!-- Story Page -->
+    <string name="please_wait_a_moment">لطفاً چند لحظه صبر کنید...</string>
+    <string name="want_delete_story">آیا از حذف این تبلیغ اطمینان دارید؟</string>
+    <string name="link_is_invalid">لینک ثبت شده نامعتبر است!</string>
+
+    <!-- Payment Page -->
+    <string name="toolbar_title_payment_story">پیش‌نمایش تبلیغ</string>
+    <string name="toolbar_title_payment_update">تازه‌کردن آگهی</string>
+    <string name="connecting_to_payment_system">در حال اتصال به سیستم پرداخت...</string>
+    <string name="problem_with_connecting_to_payment_system">مشکلی در ارتباط با سیستم پرداخت به وجود آمده است! توجه داشته باشید که «نیرا» از سیستم پرداخت درون‌برنامه‌ای «بازار» استفاده می‌کند؛ به همین دلیل علاوه براینکه باید برنامه‌ی «بازار» بر روی دستگاه شما نصب شده باشد، لازم است به حساب خود در «بازار» وارد شده باشید!</string>
+    <string name="problem_with_consuming">متأسفانه مشکلی در عملیات پرداخت به وجود آمد!</string>
+    <string name="payment_cancled">عملیات پرداخت متوقف شد!</string>
+    <string name="button_pay">پرداخت</string>
+    <string name="payment_story_notes">تبلیغ شما به صورتی که در بالا ظاهر شده است، نمایش داده خواهد شد. برای مشاهده‌ی نحوه‌ی نمایش تصویر اصلی، تصویر بالا را لمس کنید. برای پرداخت هزینه‌ی انتشار تبلیغ، دکمه زیر را لمس کنید.</string>
+    <string name="payment_update_notes">با تازه کردن آگهی، زمان ارسال آن بروزرسانی شده و در ابتدای فهرست آگهی‌ها قرار می‌گیرد. توجه داشته باشید که آگهی‌هایی که بعد از تازه کردن آگهی شما ارسال می‌شوند، بالاتر نمایش داده خواهند شد.</string>
+    <string name="send_publish_story_request">در حال ارسال درخواست انتشار...</string>
+    <string name="send_update_item_request">در حال ارسال درخواست...</string>
+    <string name="menu_delete_story_caption">حذف</string>
+    <string name="want_delete_draft_story">آیا از حذف این پیش‌نویس (تبلیغ) اطمینان دارید؟</string>
+
+    <!-- Android Image Cropper -->
+    <string name="crop_image_menu_crop">برش</string>
+
+    <!-- Bookmarks Page -->
+    <string name="not_found">موردی پیدا نشد</string>
+
+    <!-- Search Page -->
+    <string name="search_edittext_hint">جستجو...</string>
+    <string name="search_not_found">جستجو بی‌نتیجه بود!</string>
+    <string name="too_short_search_statement">عبارت طولانی‌تری وارد کنید!</string>
+
+</resources>

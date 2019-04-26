@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:background="#000000">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/please_wait_a_moment"
+        android:textSize="18sp"
+        android:textColor="#FFF"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/storyToolbar"
+        android:background="#000"
+        android:paddingBottom="3dp" >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:onClick="closeStory"
+            android:id="@+id/closeImageView"
+            android:src="@drawable/icon_close"
+            android:background="@drawable/x_background_dark"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:padding="5dp"
+            android:layout_margin="3dp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_link"
+            android:background="@drawable/x_background_primary"
+            android:onClick="openLink"
+            android:id="@+id/linkImageView"
+            android:padding="5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_call"
+            android:background="@drawable/x_background_accent"
+            android:onClick="call"
+            android:id="@+id/phoneImageView"
+            android:padding="5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/linkImageView"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:background="@drawable/x_border_gray"
+            android:gravity="center"
+            android:id="@+id/visitLinearLayout"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="3dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_toRightOf="@+id/phoneImageView"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:id="@+id/visitTextView" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_visit" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/x_background_red"
+            android:id="@+id/deleteImageView"
+            android:visibility="gone"
+            android:onClick="deleteStory"
+            android:src="@drawable/icon_delete_forever"
+            android:padding="3dp"
+            android:layout_toRightOf="@+id/visitLinearLayout"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/storyToolbar"/>
+
+</RelativeLayout>

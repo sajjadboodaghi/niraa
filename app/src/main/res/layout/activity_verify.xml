@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/layout_background">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar_background"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/verifyToolbar"
+        android:textDirection="ltr"
+        android:layoutDirection="ltr"
+        app:title="@string/toolbar_title_verify"
+        app:titleTextColor="@color/toolbar_text" />
+
+    <View
+        style="@style/toolbarLine"
+        android:id="@+id/toolbarLine" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textDirection="rtl"
+            android:layoutDirection="rtl"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/descriptionTextView"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                android:background="@drawable/x_border_gray"
+                android:padding="10dp" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="4"
+                android:maxLines="1"
+                android:inputType="number"
+                android:textSize="40sp"
+                android:hint="- - - -"
+                android:textAlignment="center"
+                android:id="@+id/verificationEditText"
+                android:layoutDirection="ltr"
+                android:textDirection="ltr"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_check_code"
+                style="@style/MainButton"
+                android:onClick="verify"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_send_again"
+                    style="@style/MainButton"
+                    android:layout_weight="1"
+                    android:onClick="sendAgain"
+                    android:layout_marginLeft="5dp"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_change_phone_number"
+                    style="@style/MainButton"
+                    android:layout_weight="1"
+                    android:onClick="changePhoneNumber"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

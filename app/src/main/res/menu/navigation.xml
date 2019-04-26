@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/navigationCreateItem"
+        android:title="@string/navigation_menu_create_item"
+        android:icon="@drawable/icon_create_item" />
+
+    <item android:id="@+id/navigationUserItems"
+        android:title="@string/navigation_menu_your_items"
+        android:icon="@drawable/icon_user_items" />
+
+    <item android:id="@+id/navigationBookmarks"
+        android:title="@string/navigation_menu_bookmarks"
+        android:icon="@drawable/icon_bookmarks" />
+
+    <item android:id="@+id/navigationUserAccount"
+        android:title="@string/navigation_menu_user_account"
+        android:icon="@drawable/icon_user_account"/>
+
+    <item android:id="@+id/navigationCreateStory"
+        android:title="@string/navigation_menu_create_story"
+        android:icon="@drawable/icon_create_story" />
+
+    <item android:id="@+id/navigationContactUs"
+        android:title="@string/navigation_menu_contact_us"
+        android:icon="@drawable/icon_contact_us" />
+
+</menu>

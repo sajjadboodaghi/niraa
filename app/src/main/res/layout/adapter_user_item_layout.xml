@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemLayout"
+    android:background="@drawable/x_border_gray"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    android:layout_marginTop="3dp"
+    android:layout_marginRight="3dp"
+    android:layout_marginLeft="3dp"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/imageView">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="@color/item_title"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/deleteItem"
+                android:onClick="deleteItem"
+                android:background="@drawable/x_background_dark"
+                android:src="@drawable/icon_delete_forever"
+                android:padding="5dp"
+                android:layout_marginLeft="3dp"
+                android:layout_alignParentRight="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/updateItem"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:src="@drawable/icon_update_item"
+                android:background="@drawable/x_background_primary"
+                android:layout_toLeftOf="@+id/deleteItem" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/waitingItem"
+                android:src="@drawable/icon_waiting"
+                android:padding="5dp"
+                android:onClick="showWaitingMessage"
+                android:visibility="gone"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verifiedItem"
+                android:src="@drawable/icon_verified"
+                android:padding="5dp"
+                android:onClick="showVerifiedMessage"
+                android:visibility="gone"
+                android:layout_alignParentLeft="true"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_default"
+        android:id="@+id/imageView"
+        app:riv_corner_radius="5dp"
+        android:layout_alignParentLeft="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,142 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/x_border_gray"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/bookmarkImageView">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="عنوان آگهی"
+                android:textColor="@color/item_title"
+                android:textSize="18sp"
+                android:id="@+id/titleTextView" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="قیمت"
+                android:textSize="16sp"
+                android:textColor="@color/item_price"
+                android:id="@+id/priceTextView"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/icon_unbookmarked"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:onClick="bookmark"
+            android:id="@+id/bookmarkImageView" />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="توضیحات"
+        android:textSize="14sp"
+        android:textColor="@color/item_description_text"
+        android:id="@+id/descriptionTextView"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/x_border_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="3dp"
+        android:background="@drawable/x_background_accent">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/image_default_user"
+            app:riv_border_width="2dp"
+            app:riv_border_color="@color/user_image_border"
+            app:riv_oval="true"
+            android:id="@+id/userImageCircleImageView" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="@string/user_name_placeholder"
+                android:id="@+id/userNameTextView"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/phoneTextView"
+                android:textColor="#FFFFFF"
+                android:text="-"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_call"
+            android:padding="8dp"
+            android:onClick="call"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/x_background_dark"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/x_background_dark"
+            android:src="@drawable/icon_telegram"
+            android:padding="5dp"
+            android:layout_marginRight="3dp"
+            android:visibility="gone"
+            android:onClick="openTelegramProfile"
+            android:id="@+id/telegramImageView" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/icon_danger"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#555555"
+        android:text="گزارش تخلف یا آگهی نامناسب"
+        android:onClick="reportItem"
+        android:textSize="12sp"
+        android:padding="5dp"
+        android:id="@+id/reportItem"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="3dp"
+        android:visibility="gone" />
+
+</merge>

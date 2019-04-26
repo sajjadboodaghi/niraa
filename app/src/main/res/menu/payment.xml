@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:icon="@drawable/icon_delete_forever"
+        android:id="@+id/menuDeleteStory"
+        app:showAsAction="always"
+        android:title="@string/menu_delete_story_caption"
+        />
+
+    <item android:icon="@drawable/icon_back"
+        android:id="@+id/menuBack"
+        app:showAsAction="always"
+        android:title="@string/top_menu_button_back_caption"/>
+</menu>

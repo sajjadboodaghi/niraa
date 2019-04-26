@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/payment_below_layer_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/please_wait_a_moment"
+        android:textSize="18sp"
+        android:textColor="@color/payment_please_wait_text"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/payment_above_layer_background"
+        android:id="@+id/mainLinearLayout">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/paymentStoryToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/toolbar_background"
+            android:minHeight="?attr/actionBarSize"
+            android:layoutDirection="ltr"
+            android:textDirection="ltr"
+            app:title="@string/toolbar_title_payment_story"
+            app:titleTextColor="@color/toolbar_text" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/storyRecyclerView"
+            android:background="@color/colorPrimary"
+            android:paddingBottom="5dp" />
+
+        <View
+            style="@style/toolbarLine"
+            android:id="@+id/toolbarLine" />
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layoutDirection="rtl"
+                android:textDirection="rtl"
+                android:padding="3dp"
+                android:background="@color/layout_background">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    style="@style/editTextBorder"
+                    android:textColor="@color/payment_description_text"
+                    android:textAlignment="center"
+                    android:text="@string/payment_story_notes" />
+
+                <Button
+                    style="@style/MainButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:onClick="purchase"
+                    android:text="@string/button_pay"
+                    android:id="@+id/purchaseButton"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

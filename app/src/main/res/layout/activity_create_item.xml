@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/layout_background">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/createItemToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar_background"
+        android:minHeight="?attr/actionBarSize"
+        android:layoutDirection="ltr"
+        android:textDirection="ltr"
+        app:title="@string/navigation_menu_create_item"
+        app:titleTextColor="@color/toolbar_text" />
+
+    <View
+        style="@style/toolbarLine"
+        android:id="@+id/toolbarLine" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layoutDirection="rtl"
+            android:textDirection="rtl">
+
+            <EditText
+                android:id="@+id/titleEditText"
+                style="@style/editTextBorder"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:hint="@string/textview_title_hint"
+                android:inputType="textImeMultiLine"
+                android:lines="1"
+                android:maxLength="59"
+                android:maxLines="1"/>
+
+            <EditText
+                style="@style/editTextBorder"
+                android:hint="@string/textview_description_hint"
+                android:maxLength="1000"
+                android:id="@+id/descriptionEditText"
+                android:inputType="textMultiLine"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:maxLines="30"
+                android:lines="3" />
+
+            <EditText
+                style="@style/editTextBorder"
+                android:hint="@string/textview_price_hint"
+                android:maxLength="26"
+                android:lines="1"
+                android:maxLines="1"
+                android:inputType="textImeMultiLine"
+                android:id="@+id/priceEditText"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                style="@style/editTextBorder">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/note_select_place"
+                    android:padding="5dp"
+                    android:textAlignment="center"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/separator_line"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cityRadioGroup"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ramsar_city"
+                        android:checked="true"
+                        android:id="@+id/ramsarRadioButton"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tonkabon_city"
+                        android:id="@+id/tonkabonRadioButton"
+                        android:layout_weight="1"/>
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                style="@style/editTextBorder"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/note_select_category"
+                    android:padding="5dp"
+                    android:textAlignment="center"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/separator_line"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/supercategory"
+                        android:textColor="@color/category_caption" />
+
+
+                    <Spinner
+                        android:id="@+id/categorySpinner"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/separator_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/subcategory"
+                        android:textColor="@color/category_caption"/>
+
+
+                    <Spinner android:id="@+id/subCategorySpinner"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/editTextBorder"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_add_image"
+                    android:onClick="addImage"
+                    android:layout_alignParentRight="false"
+                    android:padding="15dp"
+                    android:id="@+id/addImageButton"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="10sp"
+                    android:text="@string/note_first_image_is_main_image"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/addImageButton"
+                    android:id="@+id/addImageDescription"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:id="@+id/imagesRecyclerView"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="3dp"
+                    android:visibility="gone"
+                    android:scrollbars="horizontal"
+                    android:layout_below="@id/addImageDescription"
+                    />
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/telegram_edittext_hint"
+                android:maxLength="32"
+                android:lines="1"
+                android:maxLines="1"
+                style="@style/editTextBorder"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:id="@+id/telegramEditText"
+                android:inputType="textImeMultiLine"
+                android:textDirection="ltr"
+                android:gravity="right" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MainButton"
+                android:layout_margin="3dp"
+                android:text="@string/button_send_item"
+                android:onClick="sendNewItem"
+                android:id="@+id/sendNewItemButton"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

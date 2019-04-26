@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/payment_below_layer_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/please_wait_a_moment"
+        android:textSize="18sp"
+        android:textColor="@color/payment_please_wait_text"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="@color/payment_above_layer_background"
+        android:id="@+id/mainLinearLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layoutDirection="rtl"
+            android:textDirection="rtl"
+            android:background="@color/layout_background">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/paymentUpdateToolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/toolbar_background"
+                    android:minHeight="?attr/actionBarSize"
+                    android:layoutDirection="ltr"
+                    android:textDirection="ltr"
+                    app:title="@string/toolbar_title_payment_update"
+                    app:titleTextColor="@color/toolbar_text" />
+
+                <View
+                    style="@style/toolbarLine"
+                    android:id="@+id/toolbarLine" />
+
+                <TextView
+                    android:textSize="14sp"
+                    android:textColor="@color/payment_description_text"
+                    android:textAlignment="center"
+                    android:text="@string/payment_update_notes"
+                    style="@style/editTextBorder"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp" />
+
+                <include layout="@layout/adapter_item_layout" />
+
+                <Button
+                    style="@style/MainButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="purchase"
+                    android:layout_margin="3dp"
+                    android:text="@string/button_pay"
+                    android:id="@+id/purchaseButton"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+</RelativeLayout>

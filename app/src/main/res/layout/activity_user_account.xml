@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/layout_background">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/userAccountToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar_background"
+        android:minHeight="?attr/actionBarSize"
+        app:title="@string/navigation_menu_user_account"
+        app:titleTextColor="@color/toolbar_text"
+        android:layoutDirection="ltr"
+        android:textDirection="ltr"/>
+
+    <View
+        style="@style/toolbarLine"
+        android:id="@+id/toolbarLine" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layoutDirection="rtl"
+            android:textDirection="rtl">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/x_background_accent"
+                android:gravity="center">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/image_default_user"
+                    android:id="@+id/userImageCircleImageView"
+                    app:riv_oval="true"
+                    app:riv_border_width="2dp"
+                    app:riv_border_color="@color/user_image_border" />
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:orientation="horizontal"
+                        android:layout_toLeftOf="@id/userImageCircleImageView"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center"
+                        android:onClick="selectUserImage">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/icon_select_image"
+                            android:background="@drawable/x_background_dark"
+                            android:padding="5dp"
+                            android:onClick="selectUserImage"
+                            android:id="@+id/changeUserImageView"/>
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/x_background_dark"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/icon_delete_forever"
+                            android:padding="5dp"
+                            android:visibility="gone"
+                            android:id="@+id/removeImageView"
+                            android:onClick="removeUserImage" />
+
+                    </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_toRightOf="@+id/saveUserNameButton"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/x_border_gray"
+                    android:hint="@string/user_name_hint"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:lines="1"
+                    android:inputType="textPersonName"
+                    android:digits="ضصثقفغعهخحجچشسیبلاتنمکگظطزرذدئوآژپءأإؤ "
+                    android:maxLines="1"
+                    android:maxLength="20"
+                    android:scrollbars="horizontal"
+                    android:textAlignment="center"
+                    android:id="@+id/userNameEditText" />
+
+                <ImageView
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/x_background_primary"
+                    android:id="@+id/saveUserNameButton"
+                    android:src="@drawable/icon_save"
+                    android:padding="5dp"
+                    android:onClick="saveUserName" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:orientation="horizontal"
+                android:background="@drawable/x_border_gray"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/logoutImageView">
+
+                <TextView
+                    android:id="@+id/userPhoneNumberTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:text=""
+                    android:padding="10dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_phone"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/logoutImageView"
+                style="@style/MainButton"
+                android:background="@drawable/x_background_dark"
+                android:onClick="logout"
+                android:text="@string/button_logout"
+                android:layout_margin="3dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
